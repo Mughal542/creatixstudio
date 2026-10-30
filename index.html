@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Creatix Studio – Create Your Future.</title>
+<link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,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">
+<meta name="description" content="Creatix Studio combines strategy, creativity and AI-powered execution to help brands grow.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ch:#343434;--gold:#FFB323;--dk:#222222;--wh:#FFFFFF;--lt:#F7F7F5;--gr:#B0B0B0;
+--bg:var(--lt);--card:var(--wh);--tx:var(--dk);--mut:#6d6d6a;--line:rgba(52,52,52,.1);--grid:rgba(52,52,52,.06);
+--h1a:#1d1d1d;--h1b:#7a7a7a;--fiv:#1DBF73;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 17px/1.6 Outfit,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+img{max-width:100%}a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-weight:700;line-height:1.05;letter-spacing:-.03em;margin:0}
+h2{font-size:clamp(2rem,4.6vw,3.2rem);margin-bottom:14px}
+h3{font-size:1.2rem;letter-spacing:-.01em;line-height:1.25}
+p{margin:0}.sub{color:var(--mut);max-width:520px}
+section{padding:96px 0}
+.head{margin-bottom:48px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.gold{background:var(--gold);color:#222;box-shadow:0 8px 24px -8px rgba(255,179,35,.7)}
+.dark{background:var(--dk);color:#fff}
+.fiv{background:var(--card);color:var(--tx);border-color:var(--line)}
+.fiv i{width:10px;height:10px;border-radius:50%;background:var(--fiv);box-shadow:0 0 0 4px rgba(29,191,115,.2)}
+/* nav */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 78%,transparent);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.3rem;letter-spacing:-.02em}
+.logo img{width:38px;height:auto}.logo b{color:var(--gold);font-weight:700}
+nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+nav ul a{padding:8px 16px;border-radius:999px;font-weight:500;font-size:.98rem;color:var(--mut);transition:.2s}
+nav ul a:hover{background:var(--line);color:var(--tx)}
+.menu{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:var(--tx)}
+.menu span{display:block;width:22px;height:2px;background:currentColor;margin:5px auto;transition:.25s}
+.menu[aria-expanded=true] span:first-child{transform:translateY(3.5px) rotate(45deg)}
+.menu[aria-expanded=true] span:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+/* hero */
+.hero{position:relative;padding:72px 0 0;text-align:center;overflow:hidden;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:64px 64px;background-position:center top}
+.hero::after{content:"";position:absolute;left:50%;bottom:-120px;width:760px;max-width:140%;height:420px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(255,179,35,.38),rgba(255,179,35,0));pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.kicker{font-size:1.05rem;font-weight:500;color:var(--mut);margin-bottom:10px}
+.hero h1{font-size:clamp(3.6rem,13vw,9.4rem);letter-spacing:-.055em;line-height:.88;background:linear-gradient(180deg,var(--h1a) 10%,var(--h1b));-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.06em}
+.pill{display:inline-block;transform:rotate(-3deg);margin:-14px 0 26px;padding:12px 30px;border-radius:999px;font-weight:700;font-size:clamp(1.2rem,3vw,1.7rem);letter-spacing:-.02em;color:var(--gold);background:linear-gradient(180deg,#4a4a4a,#222);box-shadow:0 14px 30px -10px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.25)}
+.hero .sub{margin:0 auto 32px;font-size:1.12rem}
+.cta{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.stage{position:relative;height:300px;margin-top:64px;perspective:1200px}
+.fc{position:absolute;bottom:-70px;width:min(300px,78vw);padding:22px;border-radius:26px;background:color-mix(in srgb,var(--card) 88%,transparent);border:6px solid var(--card);box-shadow:0 30px 60px -24px rgba(0,0,0,.3);text-align:left;left:50%;backdrop-filter:blur(6px)}
+.fc small{color:var(--mut);font-weight:500}.fc strong{display:block;font-size:2.3rem;letter-spacing:-.04em;line-height:1.1;margin:4px 0 14px}
+.fc .bar{height:8px;border-radius:9px;background:var(--line);overflow:hidden;margin-top:8px}.fc .bar i{display:block;height:100%;border-radius:9px;background:var(--gold)}
+.fc.a{transform:translateX(-128%) rotate(-9deg);bottom:-90px}
+.fc.b{transform:translateX(-50%);bottom:-30px;z-index:2}
+.fc.c{transform:translateX(28%) rotate(9deg);bottom:-90px}
+.chip{display:inline-flex;gap:8px;align-items:center;font-weight:600;font-size:.95rem}.chip::before{content:"";width:28px;height:28px;border-radius:9px;background:var(--gold)}
+.fc.a .chip::before{background:var(--dk)}
+.dots{display:flex;gap:6px;margin-top:6px}.dots i{width:28px;height:28px;border-radius:50%;background:var(--line)}.dots i:nth-child(2){background:var(--gold)}.dots i:nth-child(3){background:var(--ch)}
+/* stats */
+.stats{padding:0;background:var(--dk);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding-top:56px;padding-bottom:40px;text-align:center}
+.stats strong{display:block;font-size:2.6rem;font-weight:700;letter-spacing:-.04em;color:var(--gold);line-height:1.1}
+.stats span{color:var(--gr);font-size:.95rem}
+/* about strip */
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.about h2{margin-bottom:18px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tags span{padding:9px 18px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-weight:500;font-size:.95rem}
+.about-card{position:relative;aspect-ratio:1;border-radius:34px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.about-card::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:40px 40px}
+.about-card img{position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:94%;width:auto;max-width:none}
+@keyframes float{50%{transform:translateY(-12px)}}
+/* services */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:30px}
+.card p{color:var(--mut);font-size:.98rem;margin-top:10px}
+.sv{transition:transform .25s,border-color .25s}.sv:hover{transform:translateY(-5px);border-color:var(--gold)}
+.ic{width:46px;height:46px;border-radius:14px;background:var(--gold);color:#222;display:grid;place-items:center;margin-bottom:22px}
+.ic svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.more{margin-top:28px;color:var(--mut)}.more a{color:var(--tx);font-weight:600;border-bottom:2px solid var(--gold)}
+/* process */
+.proc{background:var(--dk);color:#fff}
+.proc .sub{color:var(--gr)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.steps::before{content:"";position:absolute;top:23px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,var(--gold),rgba(255,179,35,.15))}
+.step{position:relative;padding:0 12px;text-align:center}
+.step b{display:grid;place-items:center;width:48px;height:48px;margin:0 auto 20px;border-radius:50%;background:var(--gold);color:#222;font-size:1.1rem}
+.step p{color:var(--gr);font-size:.92rem;margin-top:8px;line-height:1.5}
+/* work */
+.work{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:20px}
+.pj{position:relative;min-height:340px;border-radius:30px;padding:30px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:var(--dk);color:#fff;isolation:isolate}
+.pj::before{content:"";position:absolute;z-index:-1;width:260px;height:260px;border-radius:50%;right:-70px;top:-70px;background:radial-gradient(closest-side,rgba(255,179,35,.7),transparent)}
+.pj:nth-child(2){background:var(--ch)}.pj:nth-child(3){background:#F0EEE8;color:#222}
+.pj:nth-child(3)::before{background:radial-gradient(closest-side,rgba(255,179,35,.9),transparent)}
+.pj em{font-style:normal;font-weight:600;font-size:.85rem;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.14);align-self:flex-start;margin-bottom:auto}
+.pj:nth-child(3) em{background:rgba(0,0,0,.08)}
+.pj strong{font-size:3.2rem;letter-spacing:-.05em;line-height:1;color:var(--gold);margin-bottom:8px}
+.pj:nth-child(3) strong{color:#222}.pj p{opacity:.85;font-size:.98rem}
+/* reviews */
+.rate{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:20px}
+.stars{color:var(--gold);letter-spacing:3px;font-size:1.1rem}
+.rv .stars{margin-bottom:14px}.rv p{color:var(--tx);font-size:1.02rem;margin:0 0 22px}
+.who{display:flex;align-items:center;gap:12px;font-size:.9rem;color:var(--mut);line-height:1.3}
+.who b{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--ch);color:var(--gold);flex:none}
+.who strong{display:block;color:var(--tx);font-weight:600}
+.me{font-weight:500;font-size:.98rem;color:var(--mut);white-space:nowrap}.me strong{color:var(--tx);font-weight:600}.me i{font-style:normal;color:var(--gold)}
+@media (max-width:480px){.logo{font-size:1.1rem}.logo img{width:30px}}
+.mail{margin-top:24px;color:var(--gr);font-size:.98rem}.mail b{color:#fff;font-weight:600;user-select:all;word-break:break-all}.mail button{margin-left:10px;padding:5px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.28);background:none;color:#fff;font:inherit;font-size:.88rem;cursor:pointer}
+.md{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background:rgba(20,20,20,.55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.md[hidden]{display:none}
+.mb{position:relative;width:100%;max-width:480px;max-height:100%;overflow:auto;background:var(--card);color:var(--tx);border-radius:28px;padding:30px;box-shadow:0 40px 80px -20px rgba(0,0,0,.5);animation:rise .35s both}
+.mb h3{margin-bottom:18px;font-size:1.4rem}.mb label{display:block;font-weight:500;font-size:.9rem;color:var(--mut);margin-bottom:14px}
+.mb input,.mb textarea{display:block;width:100%;margin-top:6px;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--bg);color:var(--tx);font:inherit;font-size:1rem}
+.mb input[readonly]{font-weight:600}.mb textarea{resize:vertical}
+.x{position:absolute;top:14px;right:16px;width:40px;height:40px;border:0;background:none;font-size:1.8rem;line-height:1;cursor:pointer;color:var(--mut)}
+.ma{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}.ma .btn{padding:12px 22px}
+/* social icons */
+.si{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.chip.yt::before,.chip.ig::before{display:none}
+.chip .si{width:28px;height:28px;padding:5px;border-radius:9px;background:var(--gold);color:#222}
+.fc.a .chip .si{background:var(--dk);color:#fff}
+.tags .si,.pj em .si{width:16px;height:16px;vertical-align:-3px;margin-right:6px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:20px}.g4 .card{padding:24px}.g4 em{display:inline-block;font-style:normal;font-size:.8rem;font-weight:600;color:#222;background:var(--gold);padding:4px 12px;border-radius:999px;margin-bottom:14px}.g4 h3{font-size:1.05rem}.g4 p{font-size:.92rem;margin-top:8px}
+.sh{margin:44px 0 -4px;font-size:1.1rem;font-weight:600;color:var(--mut)}
+@media (max-width:900px){.g4{grid-template-columns:1fr 1fr}}@media (max-width:520px){.g4{grid-template-columns:1fr}}
+/* reviews marquee */
+.marq{margin:0 calc(50% - 50vw);overflow:hidden;display:grid;gap:20px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;width:max-content;animation:slide 60s linear infinite}
+.track.r{animation-direction:reverse;animation-duration:70s}
+.marq:hover .track{animation-play-state:paused}
+.set{display:flex;gap:20px;padding-right:20px;min-width:100vw;flex:none}
+.rv{width:340px;flex:none;margin:0}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marq{overflow-x:auto;-webkit-mask-image:none;mask-image:none}}
+/* contact */
+.end{background:var(--dk);color:#fff;border-radius:40px;padding:72px 32px;text-align:center;position:relative;overflow:hidden;isolation:isolate}
+.end::before{content:"";position:absolute;z-index:-1;left:50%;top:-180px;width:620px;height:360px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(255,179,35,.4),transparent)}
+.end .sub{margin:0 auto 32px;color:var(--gr)}
+.end .fiv{background:#fff;color:#222}
+.out{color:#fff;border-color:rgba(255,255,255,.28)}
+footer{padding:36px 0 48px;color:var(--mut);font-size:.92rem}
+.foot{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+.foot .logo{color:var(--tx);font-size:1.1rem}.foot .logo img{width:30px}
+.foot div:last-child{display:flex;gap:22px}.foot a:hover{color:var(--tx)}
+/* motion */
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}}
+.fc{animation:in 1.1s .35s cubic-bezier(.2,.7,.2,1) both}
+@keyframes in{from{opacity:0;margin-bottom:-80px}}
+@media (max-width:900px){
+section{padding:72px 0}
+.menu{display:block}
+nav ul{position:absolute;top:72px;left:0;right:0;flex-direction:column;padding:12px 24px 20px;background:var(--bg);border-bottom:1px solid var(--line);display:none}
+nav ul.open{display:flex}nav ul a{display:block;padding:14px 12px}
+.me{margin-left:auto;margin-right:6px;font-size:.78rem;text-align:right;line-height:1.25}.me strong{display:block}.me i{display:none}
+.grid3,.work,.about{grid-template-columns:1fr}
+.steps{grid-template-columns:1fr;gap:28px}.steps::before{display:none}
+.step{display:grid;grid-template-columns:48px 1fr;gap:0 18px;text-align:left;padding:0}.step b{margin:0;grid-row:span 2}.step p{margin-top:0}
+.stats .wrap{grid-template-columns:repeat(2,1fr)}
+.fc.a,.fc.c{display:none}.stage{height:250px}.fc.b{bottom:-40px}
+.about-card{max-width:340px}
+.pj{min-height:280px}
+}
+/* More from Creatix Studio */
+.more-studio{padding-top:24px}
+.more-studio .eyebrow{margin-bottom:12px;color:var(--mut);font-size:.92rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.more-studio .head{max-width:700px}
+.more-grid{align-items:stretch}
+.more-card{position:relative;display:flex;min-height:300px;flex-direction:column;align-items:flex-start;overflow:hidden;transition:transform .25s,border-color .25s}
+.more-card::before{content:"";position:absolute;top:-70px;right:-70px;width:180px;height:180px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,179,35,.26),transparent);pointer-events:none}
+.more-card:hover{transform:translateY(-5px);border-color:var(--gold)}
+.more-card-link{color:inherit;text-decoration:none}
+.more-icon{display:grid;place-items:center;width:54px;height:54px;margin-bottom:22px;border-radius:17px;background:var(--dk);color:var(--gold);font-size:1rem;font-weight:800;letter-spacing:-.05em}
+.more-card:last-child .more-icon{background:var(--gold);color:var(--dk)}
+.more-label{margin-bottom:8px;color:var(--mut);font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.more-card h3{margin-bottom:10px;font-size:1.35rem}
+.more-card p{max-width:34ch;line-height:1.65}
+.more-status{margin-top:auto;padding-top:24px;color:var(--mut);font-size:.88rem;font-weight:600}
+.more-status::before{content:"";display:inline-block;width:8px;height:8px;margin-right:9px;border-radius:50%;background:var(--gold);vertical-align:1px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a href="#top" class="logo" aria-label="Creatix Studio home"><img src="data:image/png;base64,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" alt="">Creatix <b>Studio</b></a>
+  <nav aria-label="Main">
+   <ul id="links">
+    <li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#process">Process</a></li><li><a href="#work">Portfolio</a></li><li><a href="#more-from-creatix">More</a></li><li><a href="#reviews">Reviews</a></li>
+   </ul>
+  </nav>
+  <span class="me"><strong>Aqsa Zahid</strong><i> | </i>Founder</span>
+  <button class="menu" aria-label="Menu" aria-expanded="false" aria-controls="links"><span></span><span></span></button>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap">
+  <p class="kicker rise">Strategy + creativity + AI-powered execution</p>
+  <h1 class="rise" style="animation-delay:.08s">Create Your<br>Future.</h1>
+  <div class="rise" style="animation-delay:.2s"><span class="pill">Brands that grow faster</span></div>
+  <p class="sub rise" style="animation-delay:.28s">Creatix Studio helps brands and creators grow with social media strategy, video content and automation.</p>
+  <div class="cta rise" style="animation-delay:.36s">
+   <a class="btn gold" href="https://zoom.us/meeting/schedule" target="_blank" rel="noopener">Book a Free Strategy Call</a>
+   <a class="btn fiv" href="https://www.fiverr.com/skillsetpr0?public_mode=true" target="_blank" rel="noopener"><i></i>Hire me on Fiverr</a>
+  </div>
+  <div class="stage" aria-hidden="true">
+   <div class="fc a"><span class="chip yt"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4.5"/><path d="m10 9 5 3-5 3z" fill="currentColor"/></svg>YouTube</span><strong>Faceless</strong><small>Automation channels</small><div class="bar"><i style="width:72%"></i></div></div>
+   <div class="fc b"><span class="chip ig"><svg class="si" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".8" fill="currentColor"/></svg>Instagram</span><strong>+100%</strong><small>Follower growth</small><div class="bar"><i style="width:100%"></i></div></div>
+   <div class="fc c"><span class="chip">AI Content</span><strong>Voice + Visuals</strong><small>Made in days, not weeks</small><div class="dots"><i></i><i></i><i></i></div></div>
+  </div>
+ </div>
+</section>
+
+<div class="stats">
+ <div class="wrap">
+  <div><strong data-n="4.9" data-d="1">4.9</strong><span>Fiverr rating</span></div>
+  <div><strong data-n="57">57</strong><span>Client reviews</span></div>
+  <div><strong data-n="3" data-s="+">3+</strong><span>Years of experience</span></div>
+  <div><strong data-n="7">7</strong><span>Countries served</span></div>
+ </div>
+</div>
+
+<section id="about">
+ <div class="wrap about">
+  <div>
+   <h2>Led by Aqsa Zahid.<br>Built for growth.</h2>
+   <p class="sub">I’m a social media and AI content strategist. Unlike a traditional agency, Creatix Studio brings strategy, creative and automation together, so your content works harder and reaches further.</p>
+   <div class="tags"><span>Instagram</span><span>YouTube</span><span>AI tools</span><span>Video editing</span><span>Automation</span><span>Website design</span><span>UI/UX design</span></div>
+  </div>
+  <div class="about-card"><img src="cs%20avatar.png" alt="Creatix Studio avatar"></div>
+ </div>
+</section>
+
+<section id="services" style="padding-top:0">
+ <div class="wrap">
+  <div class="head"><h2>Services</h2><p class="sub">Everything you need to grow your digital presence, from one team.</p></div>
+  <div class="grid3">
+   <article class="card sv"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6"/></svg></div><h3>Profile Setup &amp; Cleanup</h3><p>Remove bots and ghost followers so your engagement is real.</p></article>
+   <article class="card sv"><div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4.5"/><path d="m10 9 5 3-5 3z" fill="currentColor"/></svg></div><h3>YouTube Management</h3><p>Faceless, automated channels built to monetize efficiently.</p></article>
+   <article class="card sv"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".8" fill="currentColor"/></svg></div><h3>Social Media Growth</h3><p>Consistent posting, community care and organic growth for Instagram and TikTok.</p></article>
+   <article class="card sv"><div class="ic"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="3"/><path d="M11 18h2"/></svg></div><h3>Reels &amp; Shorts</h3><p>Editing, repurposing and thumbnails that turn viewers into followers.</p></article>
+   <article class="card sv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M18 6l-2 2M8 16l-2 2"/><circle cx="12" cy="12" r="3"/></svg></div><h3>AI Content</h3><p>AI visuals, human-like voiceovers and scripts, produced fast.</p></article>
+   <article class="card sv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></div><h3>Chatbots &amp; Ad Copy</h3><p>AI customer service bots and ad scripts that drive real sales.</p></article>
+  </div>
+  <p class="more">Plus website and UI/UX design, brand storytelling, motion graphics, ad copywriting and more.</p>
+ </div>
+</section>
+
+<section id="process" class="proc">
+ <div class="wrap">
+  <div class="head"><h2>How it works</h2><p class="sub">A proven five-step framework, from first chat to monthly results.</p></div>
+  <div class="steps">
+   <div class="step"><b>1</b><h3>Consultation</h3><p>We talk goals and review your presence.</p></div>
+   <div class="step"><b>2</b><h3>Strategy</h3><p>A custom plan for content and schedule.</p></div>
+   <div class="step"><b>3</b><h3>Creation</h3><p>Posts, Reels, scripts and AI visuals.</p></div>
+   <div class="step"><b>4</b><h3>Publishing</h3><p>Posted, optimized and monitored.</p></div>
+   <div class="step"><b>5</b><h3>Reports</h3><p>Monthly growth and next steps.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="work">
+ <div class="wrap">
+  <div class="head" style="margin-bottom:32px"><h2>Portfolio</h2><p class="sub">Featured results, plus more of my work on Fiverr.</p></div>
+  <div class="work">
+   <article class="pj"><em>Social media</em><strong>+100%</strong><h3>Followers &amp; reach growth</h3><p>A targeted strategy that doubled followers and reach.</p></article>
+   <article class="pj"><em>YouTube</em><strong>Monetized</strong><h3>Travel videos channel</h3><p>A travel video channel grown to monetization.</p></article>
+   <article class="pj"><em>AI</em><strong>eBook → Audio</strong><h3>Ebook to audiobook</h3><p>Ebooks turned into engaging audiobooks.</p></article>
+  </div>
+  <p class="sh">More projects</p>
+  <div class="g4">
+   <article class="card sv"><em>3D Character</em><h3>Pixar-style character design</h3><p>Full character sheet with turnaround and expressions, ready for 3D modeling.</p></article>
+   <article class="card sv"><em>Web App</em><h3>ExpenseOS tracker</h3><p>A dark neon expense tracking app with budgets and analytics.</p></article>
+   <article class="card sv"><em>AI Comic</em><h3>The Glitch</h3><p>A five-page sci-fi comic with a consistent pop-art look.</p></article>
+   <article class="card sv"><em>Illustration</em><h3>Children’s storybook</h3><p>Colorful, expressive scenes that bring a story to life.</p></article>
+  </div>
+  <div class="cta" style="justify-content:flex-start;margin-top:36px"><a class="btn fiv" href="https://www.fiverr.com/s/EmmexG9" target="_blank" rel="noopener"><i></i>View all projects on Fiverr</a></div>
+ </div>
+</section>
+
+<section id="more-from-creatix" class="more-studio">
+ <div class="wrap">
+  <div class="head">
+   <p class="eyebrow">Tools and ideas from our studio</p>
+   <h2>More From Creatix Studio</h2>
+   <p class="sub">A growing collection of creative tools and projects made by Creatix Studio.</p>
+  </div>
+  <div class="grid3 more-grid">
+   <article class="card more-card">
+    <div class="more-icon" aria-hidden="true">BA</div>
+    <span class="more-label">AI Brand Direction</span>
+    <h3>Brandora AI</h3>
+    <p>Explore brand name ideas, color palettes, font pairings, and original logo concepts from one clear brief.</p>
+    <span class="more-status">A Creatix Studio project</span>
+   </article>
+   <a class="card more-card more-card-link" href="https://growthauditor.vercel.app/" target="_blank" rel="noopener">
+    <div class="more-icon" aria-hidden="true">GA</div>
+    <span class="more-label">Website Growth</span>
+    <h3>Growth Auditor</h3>
+    <p>Use a practical website checklist to review growth opportunities and create a focused seven-day action plan.</p>
+    <span class="more-status">Open Growth Auditor ↗</span>
+   </a>
+   <article class="card more-card">
+    <div class="more-icon" aria-hidden="true">+</div>
+    <span class="more-label">Coming next</span>
+    <h3>More Projects in Process</h3>
+    <p>We are building more useful ideas and tools. New Creatix Studio projects will be added here as they are ready.</p>
+    <span class="more-status">In development</span>
+   </article>
+  </div>
+ </div>
+</section>
+<section id="reviews" style="padding-top:0">
+ <div class="wrap">
+  <div class="head"><h2>What clients say</h2>
+   
+  </div>
+</div>
+ <div class="marq">
+  <div class="track"><div class="set">
+   <article class="card rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>“Es buenísimo trabajar con ella”</p><div class="who"><b>L</b><span><strong>lucvalls</strong>Spain · Profile Setup</span></div></article>
+   <article class="card rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>“Working with Aqsa is always synonymous with guaranteed service and results.”</p><div class="who"><b>L</b><span><strong>lucvalls</strong>Spain · YouTube Management</span></div></article>
+   <article class="card rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>“Good job Aqsa! Your attention to details and professionalism is highly appreciated. I wish you all the very best!”</p><div class="who"><b>A</b><span><strong>akbarhero</strong>Canada · Text-to-speech</span></div></article>
+   <article class="card rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>“Thank you for your kindness and your hard work. I will be back for more because of your professionalism.”</p><div class="who"><b>I</b><span><strong>iconicreview</strong>US · YouTube Management</span></div></article>
+   <article class="card rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>“Aqsa Zahid did FANTASTIC work, with a lot of attention to detail, deep strategic thinking, and a richness about the task. Collaborating with her was a delight.”</p><div class="who"><b>J</b><span><strong>jbags1275</strong>UAE · YouTube Management</span></div></article>
+  </div></div>
+  <div class="track r"><div class="set">
+   <article class="card rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>“This Lady has made me Love this platform she is very Professional and helpful”</p><div class="who"><b>K</b><span><strong>kudashonhiwa1</strong>UK · YouTube Management</span></div></article>
+   <article class="card rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>“so good and fast”</p><div class="who"><b>M</b><span><strong>mark78439</strong>Germany · Profile Setup</span></div></article>
+   <article class="card rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>“The best ever. Thanks a lot”</p><div class="who"><b>M</b><span><strong>mohamedlahkimbe</strong>Morocco · YouTube Management</span></div></article>
+   <article class="card rv"><div class="stars" aria-label="5 stars">★★★★★</div><p>“Aqsa is the best. Great communication and very easy to work with. I highly recommend!”</p><div class="who"><b>A</b><span><strong>amatyleon</strong>US · YouTube Management</span></div></article>
+  </div></div>
+ </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+ <div class="wrap">
+  <div class="end">
+   <h2>Ready to grow?</h2>
+   <p class="sub">Let’s build something great together. I reply within 24 hours.</p>
+   <div class="cta">
+    <button type="button" class="btn gold" id="om" aria-haspopup="dialog">Send Email</button>
+    <a class="btn out" href="https://www.linkedin.com/company/112031419/" target="_blank" rel="noopener">LinkedIn</a>
+   </div>
+   <p class="mail"><b>creatixstudiopersonal@gmail.com</b><button type="button" id="cp">Copy</button></p>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap foot">
+  <div class="logo"><img src="data:image/png;base64,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" alt="">Creatix <b>Studio</b></div>
+  <div>© 2026 Creatix Studio. All rights reserved.</div>
+  <div><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
+ </div>
+</footer>
+
+<div class="md" id="md" role="dialog" aria-modal="true" aria-labelledby="mt" hidden>
+ <div class="mb">
+  <button type="button" class="x" id="mx" aria-label="Close">×</button>
+  <h3 id="mt">New message</h3>
+  <label>To<input id="mto" value="creatixstudiopersonal@gmail.com" readonly></label>
+  <label>Your name<input id="mnm" placeholder="Your name" autocomplete="name"></label>
+  <label>Message<textarea id="mmg" rows="5" placeholder="Tell me about your brand and goals"></textarea></label>
+  <div class="ma"><a class="btn gold" id="mg" href="#" target="_blank" rel="noopener">Open in Gmail</a></div>
+ </div>
+</div>
+
+<script>
+(function(){
+ var m=document.querySelector('.menu'),l=document.getElementById('links');
+ function t(o){l.classList.toggle('open',o);m.setAttribute('aria-expanded',o)}
+ m.addEventListener('click',function(){t(!l.classList.contains('open'))});
+ l.addEventListener('click',function(e){if(e.target.tagName==='A')t(false)});
+ document.querySelectorAll('.track').forEach(function(k){if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;var c=k.firstElementChild.cloneNode(true);c.setAttribute('aria-hidden','true');k.appendChild(c)});
+ var cb=document.getElementById('cp'),ad='creatixstudiopersonal@gmail.com';
+ function fb(){var x=document.createElement('textarea');x.value=ad;document.body.appendChild(x);x.select();try{document.execCommand('copy');cb.textContent='Copied'}catch(e){}document.body.removeChild(x)}
+ if(cb)cb.addEventListener('click',function(){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(ad).then(function(){cb.textContent='Copied'},fb)}else fb()});
+ var md=document.getElementById('md'),om=document.getElementById('om'),nm=document.getElementById('mnm'),mg=document.getElementById('mmg');
+ function upd(){var n=nm.value.trim(),m=mg.value.trim(),su='Enquiry from Creatix Studio website',bd='Hi Creatix Studio,\n\n'+m+(n?'\n\n'+n:'');
+  document.getElementById('mg').href='https://mail.google.com/mail/?view=cm&fs=1&to='+ad+'&su='+encodeURIComponent(su)+'&body='+encodeURIComponent(bd)}
+ function shut(){md.hidden=true;om.focus()}
+ if(om&&md){om.addEventListener('click',function(){md.hidden=false;upd();mg.focus()});
+  nm.addEventListener('input',upd);mg.addEventListener('input',upd);
+  document.getElementById('mx').addEventListener('click',shut);
+  md.addEventListener('click',function(e){if(e.target===md)shut()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!md.hidden)shut()})}
+ var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ var els=document.querySelectorAll('.stats strong');
+ if(rm||!('IntersectionObserver' in window))return;
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(!e.isIntersecting)return;io.unobserve(e.target);
+  var el=e.target,n=+el.dataset.n,d=+el.dataset.d||0,s=el.dataset.s||'',st=performance.now();
+  (function f(now){var p=Math.min((now-st)/1200,1),v=n*(1-Math.pow(1-p,3));
+   el.textContent=v.toFixed(d)+s;if(p<1)requestAnimationFrame(f)})(st);
+ })},{threshold:.6});
+ els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
